@@ -55,7 +55,29 @@ Nodemon (for auto-restart in development)
 
 ## API Documentation
 
-Using Potman
+**Using Potman*
+
+**AUTH**
+
+**Register* : https://podcast-api.up.railway.app/api/auth/register
+**Login* : https://podcast-api.up.railway.app/api/auth/login
+**Logout* : https://podcast-api.up.railway.app/api/auth/logout
+
+**PODCASTS**
+
+**Create A Podcast* : https://podcast-api.up.railway.app/api/podcast/
+**Get ALL Podcasts* : https://podcast-api.up.railway.app/api/podcast?&limit=10&page=1
+**Patch podcast* : https://podcast-api.up.railway.app/api/podcast/:id
+**Get Podcast With Episodes* : https://podcast-api.up.railway.app/api/podcast/getPodcastWithEpisodes/:id?search=query&page=1&limit-10
+**Delete Podcast* : https://podcast-api.up.railway.app/api/podcast/:id
+
+**EPISODES**
+
+**Create A Episode* : https://podcast-api.up.railway.app/api/episode
+**Get Single Episode* : https://podcast-api.up.railway.app/api/episode/:id
+**Patch Episode* : https://podcast-api.up.railway.app/api/episode/:id
+**Get All Episodes* : https://podcast-api.up.railway.app/api/episode?search=query&page=1&limit=10
+**Delete Episode* : https://podcast-api.up.railway.app/api/episode/:id
 
 ---
 
