@@ -60,7 +60,7 @@ The app uses **Zustand** for lightweight global state:
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Layer | Technologies |
 |-------|---------------|
