@@ -78,25 +78,26 @@ Base URL: [https://podcast-api.up.railway.app](https://podcast-api.up.railway.ap
 ### Auth
 | Action | Method | Endpoint |
 |--------|---------|----------|
-| Register | `POST` | `/auth/register` |
-| Login | `POST` | `/auth/login` |
-| Logout | `POST` | `/auth/logout` |
+| Register | `POST` | `/api/auth/register` |
+| Login | `POST` | `/api/auth/login` |
+| Logout | `POST` | `/api/auth/logout` |
 
 ### Podcasts
 | Action | Method | Endpoint |
 |--------|---------|----------|
-| Create | `POST` | `/podcast` |
-| Get All | `GET` | `/podcast?limit=10&page=1` |
-| Update | `PATCH` | `/podcast/:id` |
-| Delete | `DELETE` | `/podcast/:id` |
+| Create | `POST` | `/api/podcast` |
+| Get All | `GET` | `/api/podcast?limit=10&page=1` |
+| Update | `PATCH` | `/api/podcast/:id` |
+| Get All With Epsoides | `GET` | `/api/podcast/getPodcastWithEpisodes/:id?search=query&page=1&limit-10` |
+| Delete | `DELETE` | `/api/podcast/:id` |
 
 ### Episodes
 | Action | Method | Endpoint |
 |--------|---------|----------|
-| Create | `POST` | `/episode` |
-| Get All | `GET` | `/episode?search=query&page=1&limit=10` |
-| Update | `PATCH` | `/episode/:id` |
-| Delete | `DELETE` | `/episode/:id` |
+| Create | `POST` | `/api/episode` |
+| Get All | `GET` | `/api/episode?search=query&page=1&limit=10` |
+| Update | `PATCH` | `/api/episode/:id` |
+| Delete | `DELETE` | `/api/episode/:id` |
 
 ---
 
@@ -139,9 +140,10 @@ CORS protection and input validation
 
 ## Environment Variables
 
-### Backend (.env)
+### Backend (`.env`)
 
-Create a `.env` file inside `/backend` with the following variables:
+Create a `.env` file inside the `/backend` folder and add the following variables:
+
 DATABASE_URL=MONOGDB_URL
 JWT_SECRET=JWT_SECRET
 NODE_ENV=development
@@ -154,11 +156,15 @@ CLOUDINARY_NAME=CLOUD_NAME
 CLOUDINARY_API_KEY=CLOUD_KEY
 CLOUDINARY_API_SECRET=CLOUD_SECRET
 
+---
 
-### frontend (.env)
+###  Frontend (`.env`)
+
+Create a `.env` file inside the `/frontend` folder and add the following variables:
 
 ARCJET_KEY=ARJECT_KEY
-BACK_END_URL=BACK_END_URL  OR   //http://localhost:6002
+BACK_END_URL=BACK_END_URL # or http://localhost:6002
+
 JWT_SECRET=JWT_SECRET
 
 ---
