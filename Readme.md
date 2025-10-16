@@ -55,6 +55,7 @@ The app consists of two main parts:
 The app uses **Zustand** for lightweight global state:
 - `authStore`: user data, tokens, and login state  
 - `podcastStore`: podcast and episode lists  
+- `episodeStore`: episode lists  
 - `playerStore`: current playing track and controls  
 
 ---
