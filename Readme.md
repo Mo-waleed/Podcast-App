@@ -8,7 +8,7 @@ The project is built using **Next.js 15 (Frontend)** and **Node.js + Express (Ba
 ## Live Demo
 
 -  Frontend (Next.js): User => [https://podcast-front-end.vercel.app/home](https://podcast-front-end.vercel.app/home)  
--  Frontend (Next.js): Admin => [https://podcast-front-end.vercel.app/home](https://podcast-front-end.vercel.app/admin/episodes/list)  
+-  Frontend (Next.js): Admin => [https://podcast-front-end.vercel.app/admin/episodes/list](https://podcast-front-end.vercel.app/admin/episodes/list)  
 -  Backend API (Express): [https://podcast-api.up.railway.app/](https://podcast-api.up.railway.app/)
 
 ---
