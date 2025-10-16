@@ -1,4 +1,4 @@
-# 🎙️ Podcast Backend
+#  Podcast Backend
 
 This is the backend server for the **Simple Podcast App**, built using **Node.js**, **Express**, and **TypeScript**.  
 It handles authentication, podcast management, and audio file uploads with full CRUD operations.
@@ -45,11 +45,11 @@ It handles authentication, podcast management, and audio file uploads with full 
 
 ## Development Tools
 
-# TypeScript
+TypeScript
 
-# ESLint + Prettier (for clean code)
+ESLint + Prettier (for clean code)
 
-# Nodemon (for auto-restart in development)
+Nodemon (for auto-restart in development)
 
 ---
 
@@ -61,13 +61,13 @@ Using Potman
 
 ## Security
 
-# JWT-based authentication
+JWT-based authentication
 
-# Rate limiting (via express-rate-limit)
+Rate limiting (via express-rate-limit)
 
-# CORS and cookie-based token handling
+ CORS and cookie-based token handling
 
-# Environment variables managed via .env
+ Environment variables managed via .env
 
 ---
 
