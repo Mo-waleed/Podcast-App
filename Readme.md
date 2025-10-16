@@ -145,15 +145,23 @@ CORS protection and input validation
 Create a `.env` file inside the `/backend` folder and add the following variables:
 
 DATABASE_URL=MONOGDB_URL
+
 JWT_SECRET=JWT_SECRET
+
 NODE_ENV=development
+
 PORT=6002
+
 ADMIN_EMAIL=ADMIN_EMAIL
+
 ADMIN_PASS=ADMIN_PASSWORD
+
 FRONT_END_URL=FRONT_END_URL
 
 CLOUDINARY_NAME=CLOUD_NAME
+
 CLOUDINARY_API_KEY=CLOUD_KEY
+
 CLOUDINARY_API_SECRET=CLOUD_SECRET
 
 ---
@@ -163,7 +171,8 @@ CLOUDINARY_API_SECRET=CLOUD_SECRET
 Create a `.env` file inside the `/frontend` folder and add the following variables:
 
 ARCJET_KEY=ARJECT_KEY
-BACK_END_URL=BACK_END_URL # or http://localhost:6002
+
+BACK_END_URL=BACK_END_URL or http://localhost:6002
 
 JWT_SECRET=JWT_SECRET
 
