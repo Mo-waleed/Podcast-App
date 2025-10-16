@@ -73,7 +73,7 @@ The app uses **Zustand** for lightweight global state:
 
 ##  API Overview
 
-Base URL: [https://podcast-api.up.railway.app/api](https://podcast-api.up.railway.app/api)
+Base URL: [https://podcast-api.up.railway.app](https://podcast-api.up.railway.app/)
 
 ### Auth
 | Action | Method | Endpoint |
