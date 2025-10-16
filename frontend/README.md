@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Simple Podcast App — Frontend
 
-## Getting Started
+This is the **frontend** for the **Simple Podcast App**, built with **Next.js 15**, **TypeScript**, and a modern UI powered by **Shadcn**, **TailwindCSS**, and **Lucide Icons**.  
+It provides a clean, responsive interface for browsing, playing, and managing podcasts and episodes.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Authentication
+- Full login, register, and logout flows integrated with the backend API  
+- Auth state managed using **Zustand**  
+- Secure token handling and session persistence  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Podcast & Episode Management
+- Fetch, create, edit, and delete podcasts  
+- View all podcasts and episodes with pagination and search  
+- Automatic UI updates using **Zustand** state management  
+- Audio player with play/pause, next/previous, and track progress  
+- Smooth UI transitions using **Framer Motion** and **Tailwind animations**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### UI & Styling
+- Built with **Shadcn UI** components  
+- Styled using **TailwindCSS** and **tailwind-merge**  
+- Light/Dark mode with **next-themes**  
+- Custom animations via **tw-animate-css**  
+- Icons from **Lucide-react**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## State Management
 
-## Deploy on Vercel
+The app uses **Zustand** for global state management:
+- Auth store (user data, tokens, login/logout)
+- Podcast store (podcasts, episodes, current playing)
+- Player state (isPlaying, currentTrack, controls)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This makes the app lightweight, reactive, and easy to scale.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Tech Stack
+
+- **Next.js 15** (App Router)  
+- **React 19**  
+- **TypeScript**  
+- **Zustand**  
+- **Shadcn UI**  
+- **TailwindCSS**  
+- **Axios**  
+- **Lucide-react**  
+- **Next-Themes**  
+- **Sonner** (for toast notifications)
+
+---
+
+## Development Tools
+
+- **ESLint + Prettier** for code quality and formatting  
+- **TypeScript** for type safety  
+- **LightningCSS** for fast builds  
+- **PostCSS** + **TailwindCSS v4** for modern styling  
+
+---
+
+## 🧾 Scripts
+
+| Command | Description |
+|----------|-------------|
+| `npm run dev` | Run the development server |
+| `npm run build` | Build the production version |
+| `npm run start` | Start the production server |
+
+---
+
+## API Integration
+
+All data is fetched via **Axios** from the backend API:  
+🔗 [Podcast Backend api](https://podcast-api.up.railway.app/)
+
+Endpoints include:
+- **Auth** (Register / Login / Logout / Refresh Token)
+- **Podcasts** (CRUD operations)
+- **Episodes** (CRUD operations)
+
+---
+
+## Player Features (Future Enhancements)
+
+- Playlist queue and shuffle  
+- Volume and playback speed control  
+
+
+
