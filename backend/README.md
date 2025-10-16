@@ -1,4 +1,4 @@
-#  Podcast Backend
+# Podcast Backend
 
 This is the backend server for the **Simple Podcast App**, built using **Node.js**, **Express**, and **TypeScript**.  
 It handles authentication, podcast management, and audio file uploads with full CRUD operations.
@@ -20,7 +20,6 @@ It handles authentication, podcast management, and audio file uploads with full 
   - Add new podcasts  
   - Edit or delete existing podcasts  
   - View all podcasts  
-
 - Each podcast can have multiple **episodes**, and if a podcast is deleted, **all its episodes** are automatically removed.
 
 ---
@@ -38,63 +37,77 @@ It handles authentication, podcast management, and audio file uploads with full 
 - **MongoDB** + **Mongoose**
 - **Cloudinary** (for media storage)
 - **JWT** (for authentication)
-- **Multer** (for handling file uploads)
+- **Multer** (for file uploads)
 - **Axios**, **Lodash**, **Nodemailer**, and other utilities
 
 ---
 
 ## Development Tools
 
-TypeScript
-
-ESLint + Prettier (for clean code)
-
-Nodemon (for auto-restart in development)
+- **TypeScript**
+- **ESLint + Prettier** (for clean, consistent code)
+- **Nodemon** (for auto-restart in development)
 
 ---
 
 ## API Documentation
 
-**Using Potman*
+You can test the API using **Postman** or any API client.
 
-**AUTH**
+### AUTH
 
-**Register* : https://podcast-api.up.railway.app/api/auth/register
-**Login* : https://podcast-api.up.railway.app/api/auth/login
-**Logout* : https://podcast-api.up.railway.app/api/auth/logout
+| Action | Method | Endpoint |
+|--------|---------|-----------|
+| Register | `POST` | https://podcast-api.up.railway.app/api/auth/register |
+| Login | `POST` | https://podcast-api.up.railway.app/api/auth/login |
+| Logout | `POST` | https://podcast-api.up.railway.app/api/auth/logout |
 
-**PODCASTS**
+---
 
-**Create A Podcast* : https://podcast-api.up.railway.app/api/podcast/
-**Get ALL Podcasts* : https://podcast-api.up.railway.app/api/podcast?&limit=10&page=1
-**Patch podcast* : https://podcast-api.up.railway.app/api/podcast/:id
-**Get Podcast With Episodes* : https://podcast-api.up.railway.app/api/podcast/getPodcastWithEpisodes/:id?search=query&page=1&limit-10
-**Delete Podcast* : https://podcast-api.up.railway.app/api/podcast/:id
+### PODCASTS
 
-**EPISODES**
+| Action | Method | Endpoint |
+|--------|---------|-----------|
+| Create Podcast | `POST` | https://podcast-api.up.railway.app/api/podcast/ |
+| Get All Podcasts | `GET` | https://podcast-api.up.railway.app/api/podcast?limit=10&page=1 |
+| Update Podcast | `PATCH` | https://podcast-api.up.railway.app/api/podcast/:id |
+| Get Podcast With Episodes | `GET` | https://podcast-api.up.railway.app/api/podcast/getPodcastWithEpisodes/:id?search=query&page=1&limit=10 |
+| Delete Podcast | `DELETE` | https://podcast-api.up.railway.app/api/podcast/:id |
 
-**Create A Episode* : https://podcast-api.up.railway.app/api/episode
-**Get Single Episode* : https://podcast-api.up.railway.app/api/episode/:id
-**Patch Episode* : https://podcast-api.up.railway.app/api/episode/:id
-**Get All Episodes* : https://podcast-api.up.railway.app/api/episode?search=query&page=1&limit=10
-**Delete Episode* : https://podcast-api.up.railway.app/api/episode/:id
+---
+
+### EPISODES
+
+| Action | Method | Endpoint |
+|--------|---------|-----------|
+| Create Episode | `POST` | https://podcast-api.up.railway.app/api/episode |
+| Get Single Episode | `GET` | https://podcast-api.up.railway.app/api/episode/:id |
+| Update Episode | `PATCH` | https://podcast-api.up.railway.app/api/episode/:id |
+| Get All Episodes | `GET` | https://podcast-api.up.railway.app/api/episode?search=query&page=1&limit=10 |
+| Delete Episode | `DELETE` | https://podcast-api.up.railway.app/api/episode/:id |
 
 ---
 
 ## Security
 
-JWT-based authentication
-
-Rate limiting (via express-rate-limit)
-
- CORS and cookie-based token handling
-
- Environment variables managed via .env
+- JWT-based authentication  
+- Rate limiting (via `express-rate-limit`)  
+- CORS and cookie-based token handling  
+- Environment variables managed via `.env`
 
 ---
 
 ## Scripts
 
-**npm run dev* : Run development server with nodemon
-**npm run build* : Compile TypeScript to JavaScript
-**npm start* : Run the compiled server (dist/)
+| Command | Description |
+|----------|-------------|
+| `npm run dev` | Run development server with nodemon |
+| `npm run build` | Compile TypeScript to JavaScript |
+| `npm start` | Run the compiled server (`dist/`) |
+
+---
+
+## 🧑‍💻 Author
+
+Developed by **Mo Waleed**  
+📫 GitHub: [@Mo-waleed](https://github.com/Mo-waleed)
