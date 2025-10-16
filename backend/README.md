@@ -105,9 +105,4 @@ You can test the API using **Postman** or any API client.
 | `npm run build` | Compile TypeScript to JavaScript |
 | `npm start` | Run the compiled server (`dist/`) |
 
----
 
-## 🧑‍💻 Author
-
-Developed by **Mo Waleed**  
-📫 GitHub: [@Mo-waleed](https://github.com/Mo-waleed)
