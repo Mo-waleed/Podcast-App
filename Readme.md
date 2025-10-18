@@ -64,7 +64,7 @@ The app uses **Zustand** for lightweight global state:
 
 | Layer | Technologies |
 |-------|---------------|
-| **Frontend** | Next.js 15, React 19, TypeScript, Zustand, Shadcn UI, TailwindCSS, Axios |
+| **Frontend** | Next.js 15, React 19, TypeScript, Zustand, Shadcn UI, TailwindCSS, Axios , Arject |
 | **Backend** | Node.js, Express, TypeScript, MongoDB, Mongoose, Cloudinary, JWT |
 | **Dev Tools** | ESLint, Prettier, LightningCSS, PostCSS, Nodemon |
 | **Deployment** | Vercel (frontend) + Railway (backend) |
