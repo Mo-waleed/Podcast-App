@@ -19,7 +19,7 @@ The app consists of two main parts:
 
 | Part | Tech | Description |
 |------|------|--------------|
-| **Frontend** | Next.js 15 + TypeScript + Zustand + Shadcn | A responsive modern UI for podcast browsing, playing, and authentication |
+| **Frontend** | Next.js 15 + TypeScript + Zustand + Shadcn + Arject | A responsive modern UI for podcast browsing, playing, and authentication |
 | **Backend** | Node.js + Express + MongoDB + Cloudinary | Handles authentication, podcasts, episodes, and media uploads |
 
 ---
